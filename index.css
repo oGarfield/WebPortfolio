@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f5f2ee;
+}
+
+:root {
+    --main-color: #de6fe2d2;
+}
+
+header {
+    background: #5E5B70;
+    color: #fff;
+    padding: 20px 10px;
+    text-align: center;
+    position: relative;
+}
+
+header img {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    width: 300px;
+    height: 100px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+header p {
+    margin: 5px 0 0;
+    font-size: 1.2rem;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    background: #333;
+    padding: 10px 0;
+    text-align: center;
+    z-index: 1000;
+}
+
+nav a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: var(--main-color);
+}
+
+nav a.active {
+    color: #de6fe2d2;
+    font-weight: bold;
+}
+
+
+section {
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: var(--main-color);
+}
+
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background: #f3eeee;
+}
+
+.hero img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin: 20px 0;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.section-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: #fff;
+}
